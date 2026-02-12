@@ -55,42 +55,42 @@ nav {
 }
 .nav-links a:hover { color: var(--accent); }
 
-/* ── HERO ── */
-#hero {
+/* ── presa ── */
+#presa {
   min-height: 100vh;
   background: linear-gradient(160deg, var(--navy) 0%, #162e5c 55%, #1e4a8e 100%);
   display: flex; align-items: center;
   position: relative; overflow: hidden;
   padding: 120px 0 80px;
 }
-.hero-grid-line {
+.presa-grid-line {
   position: absolute; inset: 0; pointer-events: none;
   background-image:
     linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
   background-size: 80px 80px;
 }
-.hero-accent-bar {
+.presa-accent-bar {
   position: absolute; top: 0; left: 0; width: 5px; height: 100%;
   background: linear-gradient(180deg, var(--accent), transparent);
 }
-.hero-circle {
+.presa-circle {
   position: absolute; right: -100px; top: 50%;
   transform: translateY(-50%);
   width: 600px; height: 600px; border-radius: 50%;
   background: radial-gradient(circle, rgba(45,125,210,0.12) 0%, transparent 70%);
 }
-.hero-inner {
+.presa-inner {
   position: relative; z-index: 2;
   max-width: 1100px; margin: 0 auto; padding: 0 48px;
   display: grid; grid-template-columns: 1fr 340px; gap: 80px; align-items: center;
 }
-.hero-eyebrow {
+.presa-eyebrow {
   font-size: 0.75rem; font-weight: 500; letter-spacing: 3px;
   text-transform: uppercase; color: var(--accent);
   margin-bottom: 20px;
 }
-.hero-name {
+.presa-name {
   font-family: 'Playfair Display', serif;
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 900;
@@ -98,30 +98,30 @@ nav {
   line-height: 1.05;
   margin-bottom: 16px;
 }
-.hero-name em { color: var(--accent); font-style: normal; }
-.hero-title {
+.presa-name em { color: var(--accent); font-style: normal; }
+.presa-title {
   font-size: 1.3rem; font-weight: 300;
   color: rgba(255,255,255,0.8);
   margin-bottom: 32px;
   letter-spacing: 0.3px;
 }
-.hero-tags {
+.presa-tags {
   display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px;
 }
-.hero-tags span {
+.presa-tags span {
   padding: 5px 14px; border: 1px solid rgba(200,150,62,0.4);
   border-radius: 20px; font-size: 0.78rem; color: rgba(255,255,255,0.7);
   letter-spacing: 0.5px;
 }
-.hero-contact { display: flex; flex-direction: column; gap: 8px; }
-.hero-contact a {
+.presa-contact { display: flex; flex-direction: column; gap: 8px; }
+.presa-contact a {
   color: rgba(255,255,255,0.6); text-decoration: none;
   font-size: 0.88rem; transition: color 0.2s;
   display: flex; align-items: center; gap: 10px;
 }
-.hero-contact a:hover { color: var(--accent); }
-.hero-contact .icon { font-size: 1rem; }
-.hero-stats { display: flex; flex-direction: column; gap: 24px; }
+.presa-contact a:hover { color: var(--accent); }
+.presa-contact .icon { font-size: 1rem; }
+.presa-stats { display: flex; flex-direction: column; gap: 24px; }
 .stat-card {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
@@ -361,20 +361,20 @@ footer {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.hero-left  { animation: fadeUp 0.9s ease both; }
-.hero-stats { animation: fadeUp 0.9s ease 0.2s both; }
+.presa-left  { animation: fadeUp 0.9s ease both; }
+.presa-stats { animation: fadeUp 0.9s ease 0.2s both; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav { padding: 0 24px; }
   .nav-links { gap: 20px; }
-  .hero-inner, .cv-grid { grid-template-columns: 1fr; }
-  .hero-stats { flex-direction: row; flex-wrap: wrap; }
+  .presa-inner, .cv-grid { grid-template-columns: 1fr; }
+  .presa-stats { flex-direction: row; flex-wrap: wrap; }
   .stat-card { flex: 1 1 140px; }
   .section-wrap { padding: 72px 24px; }
 }
 @media (max-width: 600px) {
   .nav-links { display: none; }
-  .hero-name { font-size: 2.8rem; }
+  .presa-name { font-size: 2.8rem; }
   .blog-grid { grid-template-columns: 1fr; }
 }
