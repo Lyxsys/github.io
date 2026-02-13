@@ -55,7 +55,7 @@ nav {
 }
 .nav-links a:hover { color: var(--accent); }
 
-/* ── presa ── */
+/* ── PRESA ── */
 #presa {
   min-height: 100vh;
   background: linear-gradient(160deg, var(--navy) 0%, #162e5c 55%, #1e4a8e 100%);
